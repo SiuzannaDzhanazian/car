@@ -27,6 +27,10 @@
         text-decoration: none;
         color: black;
       }
+      button{
+        border: transparent;
+        background-color: transparent;
+      }
       .icon {
         height: 50px;
         width: 90px;
@@ -36,7 +40,7 @@
         align-items: center;
         justify-content: center;
       }
-      button {
+      .more {
         background-color: black;
         color: white;
         padding: 5px;
@@ -48,6 +52,7 @@
         flex-wrap: wrap;
         /* перенос элементов на след строку если не влезают */
         list-style-type: none;
+        padding: 0;
       }
       li {
         margin: 50px;
@@ -60,10 +65,21 @@
         margin: -40px;
       }
       .space {
-        height: 100%;
-        width: 700px;
+        width: 1000px;
       }
-      
+      .all{
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+        margin: 20px 0 0 0;
+      }
+      h2{
+        padding: 15px 0 0 0;
+        margin: 0;
+      }
+      .padding{
+        padding: 0px 0px 0px 100px;
+      }
     </style>
   </head>
   <body>
@@ -90,16 +106,17 @@
           />
         </div>
         <nav>
-          <a href="#">A3</a>
-          <a href="#">A4</a>
-          <a href="#">A5</a>
-          <a href="#">A6</a>
-          <a href="#">A7</a>
-          <a href="#">A7</a>
-          <a href="#">Q3</a>
-          <a href="#">Q5</a>
+          <button href="#">A3</button>
+          <button href="#">A4</button>
+          <button href="#">A5</button>
+          <button href="#">A6</button>
+          <button href="#">A7</button>
+          <button href="#">A7</button>
+          <button href="#">Q3</button>
+          <button href="#">Q5</button>
         </nav>
       </section>
+      <section class="all">
       <section>
         <div>
         <h1>Главный автодилер Audi в РФ</h1>
@@ -111,11 +128,11 @@
           Они проходят максимально подробный технический <br />
           осмотр для безопасности наших клиентов
         </p>
-        <button>Узнать больше</button>
+        <button class="more">Узнать больше</button>
         </div>
       </section>
       <section class="space">
-        <div>
+        <div class="padding">
         <h2>Наши салоны</h2>
         <ul>
           <li>
@@ -148,6 +165,7 @@
           </li>
         </ul>
         </div>
+      </section>
       </section>
     </main>
   </body>
