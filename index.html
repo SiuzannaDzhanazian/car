@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 100px;
+      }
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      .icon {
+        height: 50px;
+        width: 90px;
+      }
+      .car {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      button {
+        background-color: black;
+        color: white;
+        padding: 5px;
+        border-radius: 10px;
+      }
+      ul {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        /* перенос элементов на след строку если не влезают */
+        list-style-type: none;
+      }
+      li {
+        margin: 50px;
+      }
+
+      .size {
+        height: 200px;
+        width: 300px;
+        border-radius: 20px;
+        margin: -40px;
+      }
+      .space {
+        height: 100%;
+        width: 700px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">More about us</a>
+        <a href="#">Contacts</a>
+      </nav>
+      <a href="#"
+        ><img
+          src="https://i.pinimg.com/736x/5b/43/a5/5b43a54cecf18e1c3f96a51a9e99ba08.jpg"
+          alt="Audi"
+          class="icon"
+      /></a>
+    </header>
+    <main>
+      
+      <section>
+        <div class="car">
+          <img
+            src="https://img.freepik.com/premium-photo/white-audi-r8-white-background-stunning-3d-car-render_899449-348305.jpg"
+            alt="Audio"
+          />
+        </div>
+        <nav>
+          <a href="#">A3</a>
+          <a href="#">A4</a>
+          <a href="#">A5</a>
+          <a href="#">A6</a>
+          <a href="#">A7</a>
+          <a href="#">A7</a>
+          <a href="#">Q3</a>
+          <a href="#">Q5</a>
+        </nav>
+      </section>
+      <section>
+        <div>
+        <h1>Главный автодилер Audi в РФ</h1>
+        <p>
+          Каждый год в РФ нашими усилиями ввозится более <br />
+          25 тыс новых леворульных автомобилей
+        </p>
+        <p>
+          Они проходят максимально подробный технический <br />
+          осмотр для безопасности наших клиентов
+        </p>
+        <button>Узнать больше</button>
+        </div>
+      </section>
+      <section class="space">
+        <div>
+        <h2>Наши салоны</h2>
+        <ul>
+          <li>
+            <img
+              src="https://cdn.prod.website-files.com/65099cd08640b596bb312703/664cd8ac7f1cbdcd7201898a_feature%20landscape%202024.jpg"
+              alt="Audio"
+              class="size"
+            />
+          </li>
+          <li>
+            <img
+              src="https://uploads.audi-mediacenter.com/system/production/media/116112/images/44c69dfd5d37c591e5fac52a8411e9063d26aeb7/A231402_blog.jpg?1698528967"
+              alt="Audio"
+              class="size"
+            />
+          </li>
+          <li>
+            <img
+              src="https://uploads.audi-mediacenter.com/system/production/media/116107/images/1d4d22762756aaceb4ca376aa5790218c36c06ef/A231397_web_2880.jpg?1698528969"
+              alt="Audio"
+              class="size"
+            />
+          </li>
+          <li>
+            <img
+              src="https://i.pinimg.com/736x/a3/16/97/a316971c52b164f30e9c0403627ef3d0.jpg"
+              alt="Audio"
+              class="size"
+            />
+          </li>
+        </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
